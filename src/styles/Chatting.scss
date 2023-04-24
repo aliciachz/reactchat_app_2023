@@ -1,36 +1,19 @@
 @import url(Common.scss);
 
-/* header */
-body > header {
-  color: #000;
-  background-color: #a1c0d5;
-  border-bottom: 1px solid #96acba;
-}
-.title_bar > .left_item > a {
-  color: #000;
-  opacity: 1;
-  font-size: 24px;
-}
-.title_bar > .right_item > a {
-  color: #000;
-  font-size: 16px;
-}
-.title_bar > .right_item > a > i {
-  padding-left: 5px;
-}
-
-/* main */
-main {
+div .section{
   display: flex;
   flex-direction: column;
-  height: calc(100% - 109px);
+  height: 100vh;
   padding-top: 64px;
-  background: #a1c0d5;
+  background-size: cover;
+  filter: drop-shadow(5px 5px 0 rgba(0, 238, 255, 0.397)) drop-shadow(5px 5px 0 rgba(0, 247, 255, 0.63));
 
   .date_info {
     opacity: 0.5;
     text-align: center;
-    margin: 10px;
+    margin: 20px;
+    padding-right: 45px;
+    color: #eee;
   }
 }
 
@@ -40,8 +23,6 @@ main {
   flex-direction: column;
   align-items: flex-start;
   width: fit-content;
-  width: -moz-fit-content; /* For Firefox */
-  width: -moz-fit-content; /* Firefox 3+, Firefox for Android 4+ */
   max-width: calc(100% - 80px);
   position: relative;
 
@@ -63,7 +44,9 @@ main {
   margin-right: 10px;
 
   .chat {
-    background: #ffe73a;
+    background: #1b2836;
+    color: #fff;
+    z-index: 10;
   }
 
   .chat_time {
@@ -72,6 +55,7 @@ main {
     bottom: -5px;
     width: 50px;
     opacity: 0.5;
+    color: #eee;
   }
 }
 
@@ -82,10 +66,8 @@ main {
 
   .profile_img {
     position: absolute;
-    left: -55px;
-    top: -5px;
-    width: 35px;
-    height: 35px;
+    top: -50px;
+    left: -10px;
   }
 
   .profile_name {
@@ -100,11 +82,13 @@ main {
     bottom: -5px;
     width: 50px;
     opacity: 0.5;
+    color: #eee;
   }
 }
 
 /* footer */
-body > footer {
+footer {
+  z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -113,10 +97,10 @@ body > footer {
   bottom: 0;
   width: 100%;
   height: 45px;
-  background: #eee;
+  background-color: #65dbf8;
 
   .plus_btn a {
-    color: #b3b4b4;
+    color: #fff;
     padding-left: 15px;
     font-size: 16px;
   }
@@ -136,6 +120,7 @@ body > footer {
       .text_field {
         width: calc(100% - 40px);
         height: 32px;
+        border: none;
       }
 
       .emoticon_btn {
@@ -155,8 +140,8 @@ body > footer {
           margin-right: 5px; 
           line-height: 37px; 
           text-align: center; 
-          background: #ffe73a; 
-          color: #513736; 
+          background: #17d8a8; 
+          color: #17d8a8; 
           font-size: 16px;
         }
       }
@@ -164,4 +149,31 @@ body > footer {
    }
 }      
     
-
+// 눈오기 
+$b:100;
+.b{
+  border-radius:50%;
+  float: left;
+  margin-top: -50px;
+  position: absolute;
+  @for $i from 0 to $b {
+    $rw:random(10)+1;
+   
+    $ra:random(20)+10;
+    $rd:random(10)+1;
+    
+    $rc:random(10)+90;
+           
+    &:nth-child(#{$i + 1}){
+      margin-left: (percentage(1)/$b)*$i;
+      width: $rw+px;
+      height: $rw+px;
+      background:hsla(0,0%,$rc,.8);
+      box-shadow: 0 0 15px 10px hsla(0,0%,$rc,.5);
+      animation: fall $ra+s $rd+s  infinite;
+    }    
+  }
+}
+@keyframes fall { 0% { transform: scale(0) }
+                  2% { transform: scale(1); top: -50px; } 
+                100% { transform: scale(0); top: 100%; } }

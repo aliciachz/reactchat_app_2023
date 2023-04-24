@@ -1,0 +1,34 @@
+@keyframes blueShades {
+  0% {
+    border-color: #0074d9;
+    box-shadow: 0 0 5px #0074d9;
+  }
+  25% {
+    border-color: #3498db;
+    box-shadow: 0 0 5px #3498db, 0 0 10px #3498db, 0 0 15px #3498db, 0 0 20px #3498db;
+  }
+  50% {
+    border-color: #6dd5ed;
+    box-shadow: 0 0 5px #6dd5ed, 0 0 10px #6dd5ed, 0 0 15px #6dd5ed, 0 0 20px #6dd5ed;
+  }
+  75% {
+    border-color: #2980b9;
+    box-shadow: 0 0 5px #2980b9, 0 0 10px #2980b9, 0 0 15px #2980b9, 0 0 20px #2980b9;
+  }
+  100% {
+    border-color: #0074d9;
+    box-shadow: 0 0 5px #0074d9;
+  }
+}
+
+.neon-cursor {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  border: 2px solid #0074d9;
+  border-radius: 50%;
+  animation: blueShades 3s linear infinite;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.5;
+}

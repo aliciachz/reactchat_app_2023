@@ -1,0 +1,82 @@
+[
+    {
+      "id": "1",
+      "name": "fedora_the_explorer",
+      "images": "https://i.pinimg.com/564x/44/c1/cb/44c1cbb3240e864555d87a8f260b1c6e.jpg",
+      "email": "fedora@gmail.com",
+      "background" :"https://i.pinimg.com/564x/ef/1a/29/ef1a29d25fbf4cb20ad5739162d250b3.jpg",
+      "messages": "Hey, how's it going?"
+    },
+    {
+      "id": "2",
+      "name": "YellowSnowman",
+      "images": "https://i.pinimg.com/736x/f2/8a/6a/f28a6a364e96c1b32f75ecdd3e437f69.jpg",
+      "email": "Snowman@gmail.com",
+      "background" :"https://i.pinimg.com/564x/d3/d3/ff/d3d3ff9cafb5b4f27c1654917c08f100.jpg",
+      "messages": "Let's catch up later!"
+    },
+    {
+      "id": "3",
+      "name": "averagestudent",
+      "images": "https://i.pinimg.com/564x/72/f9/41/72f94133f8bd1f9aec2680e64f1059ce.jpg",
+      "email": "student@gmail.com",
+      "background" :"https://i.pinimg.com/564x/68/23/f4/6823f49eed9daa421c4effbb63496d88.jpg",
+      "messages": "Did you finish the assignment?"
+    },
+    {
+      "id": "4",
+      "name": "Avocadorable",
+      "images": "https://i.pinimg.com/564x/47/d8/28/47d828e9e343cfa5c11c718a7c0e1a73.jpg",
+      "email": "adorable@gmail.com",
+      "background" :"https://i.pinimg.com/236x/9f/e8/94/9fe894cdb3d49e9ecab73a0b6a10e0bd.jpg",
+      "messages": "Have you seen the new movie?"
+    },
+    {
+      "id": "5",
+      "name": "nachocheesefries",
+      "images": "https://i.pinimg.com/564x/d0/9c/da/d09cdad1a9660b5c9fa2ea672b8ed245.jpg",
+      "email": "cheesefries@gmail.com",
+      "background" :"https://i.pinimg.com/736x/88/f1/88/88f188534d6245e5a8718c41f6baf974.jpg",
+      "messages": "Let's meet for lunch tomorrow."
+    },
+    {
+      "id": "6",
+      "name": "actuallythedog",
+      "images": "https://i.pinimg.com/564x/c7/d5/de/c7d5de525a5e5b1b183d8e522d9b670a.jpg",
+      "email": "actually@gmail.com",
+      "background" :"https://i.pinimg.com/736x/af/21/a6/af21a66d0be83a1e97f68b3712c8945b.jpg",
+      "messages": "I need your help with a project."
+    },
+    {
+      "id": "7",
+      "name": "fartoolong",
+      "images": "https://i.pinimg.com/564x/6b/9e/5d/6b9e5d48b20efbfa07c988ed51e46b98.jpg",
+      "email": "fartoolong@gmail.com",
+      "background" :"https://i.pinimg.com/564x/a5/c2/9c/a5c29cb5f22b3621927a9d6dd35c3486.jpg",
+      "messages": "We should hang out soon."
+    },
+    {
+      "id": "8",
+      "name": "google_was_my_idea",
+      "images": "https://i.pinimg.com/736x/96/0e/3a/960e3ad3852f7b31ab26ad626c705cf2.jpg",
+      "email": "google@gmail.com",
+      "background" :"https://i.pinimg.com/564x/67/f1/a1/67f1a18eb38e53ec2c219ec8512a65b9.jpg",
+      "messages": "I love you"
+    },
+    {
+      "id": "9",
+      "name": "Something",
+      "images": "https://i.pinimg.com/564x/0f/49/32/0f4932c77c77cd955f052f1bf53987ce.jpg",
+      "email": "Something@gmail.com",
+      "background" :"https://i.pinimg.com/564x/b7/21/41/b72141043e5daa303289577c20bf9380.jpg",
+      "messages": "I'm so stressed"
+    },
+    {
+      "id": "10",
+      "name": "Definitely_not_an_athlete",
+      "images": "https://i.pinimg.com/564x/2a/9d/40/2a9d4006c35a8ead0c37c3117cb37d4f.jpg",
+      "email": "athlete@gmail.com",
+      "background" :"https://i.pinimg.com/564x/df/60/94/df60944b71793046ae615ab585ffddc1.jpg",
+      "messages": "I miss you...."
+    }
+]

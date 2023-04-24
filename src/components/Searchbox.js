@@ -6,7 +6,7 @@ function Searchbox() {
     <form className="search_box">
       <fieldset className="search_inner">
         <legend className="blind">검색창</legend>
-        <FaSearch />
+        <FaSearch className="icon"/>
         <input
           type="search"
           name="search"

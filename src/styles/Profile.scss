@@ -1,4 +1,4 @@
-@import url(Common.scss);
+@import 'Common.scss';
 
 body > header {
   background: transparent;
@@ -9,15 +9,22 @@ body > header {
   font-size: 20px;
 }
 
-main {
-  height: calc(100% - 10px);
+.background{
+  height: 50vh; 
+  width: 100vw;
+  background-size: cover; 
+  background-repeat: no-repeat;
+  filter: brightness(90%);
+  .edit_background{
+    padding-top: 630px; 
+    padding-left: 30px; 
+    font-size: 25px;
+    color: #fff;
+  }
 }
 
-.background {
-  height: 65%;
-  background: url(../images/bg_default.png) no-repeat 0 0;
-  background-size: cover;
-  width: 100vw;
+.my_profile{
+  height: 40vh;
 }
 
 .profile {
@@ -32,7 +39,10 @@ main {
     top: -65px;
     width: 100px;
     height: 100px;
+    background-size: cover;
     margin-left: -50px;
+    border-radius: 50%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   }
 
   .profile_cont {
@@ -67,7 +77,7 @@ main {
         align-items: center;
         font-weight: bold;
 
-        span {
+        .icon {
           display: block;
           width: 52px;
           height: 52px;
@@ -76,7 +86,7 @@ main {
           text-align: center;
           margin-bottom: 15px;
           background-color: #f2f2f2;
-          color: #513736;
+          color: #3d5683;
           font-size: 20px;
         }
       }

@@ -1,9 +1,5 @@
 @import url(Common.scss);
 
-.tab_bar > ul > li:nth-child(4) > a {
-  color: #513736;
-}
-
 main {
   height: 85.8%;
   padding-top: 64px;
@@ -17,6 +13,9 @@ main {
     .profile_img {
       width: 50px;
       height: 50px;
+      border-radius: 50%;
+      margin: 10px;
+      background-size: cover;
     }
 
     .profile_info {
@@ -33,15 +32,17 @@ main {
         color: #8e9399;
       }
     }
-
-    .chat_img a {
+    .logout {
       font-size: 30px;
-      margin-right: 15px;
-      color: #513736;
+      margin-left: 35px;
+      color: rgba(0, 0, 0, 0.37);
+      background: url(../images/logout.gif) no-repeat 0 0;
+      background-size: cover;
+      width: 50px;
+      height: 50px;
     }
   }
 
-  /* user_menu */
   .user_menu {
     height: 125px;
     border-bottom: 1px solid #ebebeb;
@@ -60,7 +61,7 @@ main {
           display: flex;
           flex-direction: column;
           align-items: center;
-          color: #513736;
+          color: #3d5683;
           font-weight: bold;
           transition: transform 300ms linear 0s;
 
@@ -68,31 +69,57 @@ main {
             transform: scale(1.05);
           }
 
-          > i {
-            font-size: 30px;
+          > .smile {
             margin-bottom: 10px;
+            background: url(../images/smile.gif) no-repeat 0 0;
+            width: 50px;
+            height: 50px;
+            background-size: cover;
           }
         }
       }
     }
   }
 
-  /* plus_friends */
-  .plus_friends {
-    height: 280px;
+.themes {
+    margin-bottom: 10px;
+    background: url(../images/themes.gif) no-repeat 0 0;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+}
+
+.plus_friend{
+  margin-bottom: 10px;
+  background: url(../images/plus_friend.gif) no-repeat 0 0;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+}
+
+.account{
+  margin-bottom: 10px;
+  background: url(../images/account.gif) no-repeat 0 0;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+}
+
+.plus_friends {
+  height: 280px;
+  border-bottom: 1px solid #ebebeb;
+
+  > h2 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    padding: 5px 15px;
     border-bottom: 1px solid #ebebeb;
 
-    > header {
-      display: flex;
-      justify-content: space-between;
-      font-size: 16px;
-      padding: 5px 15px;
-      margin-bottom: 1px solid #ebebeb;
-
-      > span {
-        color: #8e9399;
-      }
+     span {
+      color: #8e9399;
     }
+  }
 
     > .plus_list {
       display: flex;
@@ -104,51 +131,9 @@ main {
         width: 50%;
         height: 45px;
 
-        > a > i {
+        > a > svg {
           margin: 0 15px;
           font-size: 16px;
-        }
-      }
-    }
-  }
-
-  /* more_app */
-  .more_app {
-    padding: 15px;
-
-    > ul {
-      display: flex;
-      flex-direction: row;
-
-      > li {
-        width: 75px;
-
-        > a {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          width: 100%;
-
-          > span.app_icon {
-            display: block;
-            width: 44px;
-            height: 44px;
-            margin-bottom: 10px;
-            background: url(../images/empty.jpg) 0 0 no-repeat;
-            background-size: cover;
-          }
-        }
-
-        &:nth-child(1) .app_icon {
-          background-image: url(../images/kakaostory.png);
-        }
-
-        &:nth-child(2) .app_icon {
-          background-image: url(../images/path.png);
-        }
-
-        &:nth-child(3) .app_icon {
-          background-image: url(../images/kakaofriends.png);
         }
       }
     }

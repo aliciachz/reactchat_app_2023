@@ -1,20 +1,18 @@
 import React from 'react';
-import styles from '../styles/Chat.module.scss';
-import Statusbar from '../components/Statusbar';
-import Searchbox from '../components/Searchbox';
-import Tabbar from '../components/Tabbar';
-import { FaCog, FaComment } from 'react-icons/fa';
+import 'styles/Chat.scss';
+import Statusbar from 'components/Statusbar';
+import Searchbox from 'components/Searchbox';
+import Tabbar from 'components/Tabbar';
+import { Link } from 'react-router-dom';
+import photosData from 'data/friendsData.json';
 
 function Chat() {
-  const friends = [
-    { id: 1, name: 'Friends Name', latestMessage: 'Hello! This is a text message!' },
-    { id: 2, name: 'Friends Name', latestMessage: 'Hello! This is a text message!' },
-    { id: 3, name: 'Friends Name', latestMessage: 'Hello! This is a text message!' },
-    { id: 4, name: 'Friends Name', latestMessage: 'Hello! This is a text message!' },
-    { id: 5, name: 'Friends Name', latestMessage: 'Hello! This is a text message!' },
-    { id: 6, name: 'Friends Name', latestMessage: 'Hello! This is a text message!' },
-    { id: 7, name: 'Friends Name', latestMessage: 'Hello! This is a text message!' },
-  ];
+  const friends = photosData.map((photo) => ({
+    id: photo.id,
+    name: photo.name,
+    latestMessage: photo.messages,
+    imageUrl: photo.images
+  }));
 
   return (
     <>
@@ -23,14 +21,13 @@ function Chat() {
         <div>
           <div className="title_bar">
             <h1>
-              Friends<span>1</span>
+              Chats<span>10</span>
             </h1>
             <div className="left_item">
               <a href="#">Edit</a>
             </div>
             <div className="right_item">
               <a href="#">
-                <FaCog />
               </a>
             </div>
           </div>
@@ -38,9 +35,7 @@ function Chat() {
       </header>
       <hr />
       <main>
-        <form className="search_box">
-          <Searchbox />
-        </form>
+        <Searchbox />
         <section className="main_section">
           <header className="blind">
             <h2>Friends</h2>
@@ -48,8 +43,8 @@ function Chat() {
           <ul>
             {friends.map((friend) => (
               <li key={friend.id}>
-                <a href="chatting.html">
-                  <span className="chats_img empty"></span>
+                <Link to={`/chatting/${friend.id}`}>
+                <span className="chats_img" style={{ backgroundImage: `url(${friend.imageUrl})` }}></span>
                   <span className="chats_cont">
                     <span className="chats_name">{friend.name}</span>
                     <span className="chats_latest">{friend.latestMessage}</span>
@@ -57,16 +52,11 @@ function Chat() {
                   <span className="chats_time">
                     <span>15</span>:<span>33</span>
                   </span>
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
         </section>
-        <div className="chat_fa_btn">
-          <a href="#">
-            <FaComment />
-          </a>
-        </div>
       </main>
       <hr />
       <nav className="tab_bar">
