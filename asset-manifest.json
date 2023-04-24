@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/reactchat_app_2023/static/css/main.fb724940.css",
+    "main.js": "/reactchat_app_2023/static/js/main.aea5df98.js",
+    "static/media/plus_friend.gif": "/reactchat_app_2023/static/media/plus_friend.cba5fea367911d6d4267.gif",
+    "static/media/setting.gif": "/reactchat_app_2023/static/media/setting.a6afb8e17764df1b9cf3.gif",
+    "static/media/themes.gif": "/reactchat_app_2023/static/media/themes.4324b0fc6b45ef5aa0ee.gif",
+    "static/media/shake.gif": "/reactchat_app_2023/static/media/shake.948e24c8baa711af7261.gif",
+    "static/media/find.gif": "/reactchat_app_2023/static/media/find.b46ba280fadfccbac430.gif",
+    "static/media/qr.gif": "/reactchat_app_2023/static/media/qr.49a8c2fb2d2c452114e4.gif",
+    "static/media/profile.gif": "/reactchat_app_2023/static/media/profile.93fd4761a31e116fd517.gif",
+    "static/media/account.gif": "/reactchat_app_2023/static/media/account.090afa8570a42013a7ed.gif",
+    "static/media/invite.gif": "/reactchat_app_2023/static/media/invite.f3393cdcf4a2bfe68176.gif",
+    "static/media/user.gif": "/reactchat_app_2023/static/media/user.fdd002ac6123f7d621bd.gif",
+    "static/media/smile.gif": "/reactchat_app_2023/static/media/smile.4e0142344ddbe4565179.gif",
+    "static/media/output-onlinegiftools.gif": "/reactchat_app_2023/static/media/output-onlinegiftools.8758fbbce3ea6401f56c.gif",
+    "static/media/chat.gif": "/reactchat_app_2023/static/media/chat.eef4055574c72aabb817.gif",
+    "static/media/pencil.gif": "/reactchat_app_2023/static/media/pencil.85bddb62a88fdaa6ffed.gif",
+    "static/media/comment.gif": "/reactchat_app_2023/static/media/comment.de0c2bd1f97bdb0140fa.gif",
+    "static/media/logout.gif": "/reactchat_app_2023/static/media/logout.03d94a0de90e3192f4ef.gif",
+    "index.html": "/reactchat_app_2023/index.html",
+    "main.fb724940.css.map": "/reactchat_app_2023/static/css/main.fb724940.css.map",
+    "main.aea5df98.js.map": "/reactchat_app_2023/static/js/main.aea5df98.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb724940.css",
+    "static/js/main.aea5df98.js"
+  ]
+}
